@@ -12,6 +12,8 @@ export class ApiCService {
   ) { }
 
   getProductos(){
-    return this.http.get<Auto[]>('http://localhost:3500/api/v1/auto');
+    const datos = this.http.get<Auto[]>('http://localhost:3500/api/v1/autos');
+    console.log(datos);
+    return datos;
   }
 }

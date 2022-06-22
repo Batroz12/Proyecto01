@@ -18,6 +18,7 @@ import { RegistroAccesorioComponent } from './registro-accesorio/registro-acceso
 import { RegistroAutoComponent } from './registro-auto/registro-auto.component';
 import { RegistroRepuestoComponent } from './registro-repuesto/registro-repuesto.component';
 import { RegistroComponent } from './registro/registro.component';
+import { ApiCService } from './Servicios/api-c.service';
 // import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { RegistroComponent } from './registro/registro.component';
     RegistroAutoComponent,
     RegistroRepuestoComponent,
     RegistroComponent,
+
     // ProductosComponent,
   ],
   imports: [
@@ -49,7 +51,8 @@ import { RegistroComponent } from './registro/registro.component';
     CotizacionComponent
   ],
   providers: [
-    Servicio01Service
+    Servicio01Service,
+    ApiCService
   ],
   bootstrap: [AppComponent]
 })

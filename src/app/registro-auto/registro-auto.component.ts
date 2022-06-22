@@ -10,7 +10,7 @@ export class RegistroAutoComponent {
 // .................................................... AUTOS ......................................................//
 // .................................................... AUTO01 ......................................................//
 public Auto01: Auto = {
-  id: 1,
+  id: "1",
   nombre: "4Runner",
   marca: "Toyota",
   precio: 23100,
@@ -18,7 +18,7 @@ public Auto01: Auto = {
 };
 // .................................................... AUTO02 ......................................................//
 public Auto02: Auto = {
-  id: 2,
+  id: "2",
   nombre: "Avanza",
   marca: "Toyota",
   precio: 82680,
@@ -26,7 +26,7 @@ public Auto02: Auto = {
 };
 // .................................................... AUTO03 ......................................................//
 public Auto03: Auto = {
-  id: 3,
+  id: "3",
   nombre: "Hilux",
   marca: "Toyota",
   precio: 16028,
@@ -39,7 +39,7 @@ public Auto03: Auto = {
 
   Agregar(): void {
     if(this.posicion == -1){
-    this.Auto.id = this.autoArray.length + 1;
+    // this.Auto.id = this.autoArray.length + 1;
     this.autoArray.push(this.Auto);
     this.Auto= this.autoVacio();
     console.log("el arreglo de Autos tiene:",this.autoArray.length,"elementos")
@@ -58,7 +58,7 @@ public Auto03: Auto = {
 }
   autoVacio(): Auto{
   return{
-    id: 0,
+    id: "",
     nombre:"",
     marca:"",
     precio: 0,
