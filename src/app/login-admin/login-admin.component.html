@@ -1,0 +1,60 @@
+<div class="container mt-5">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Iniciar Sesion</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-twitter-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="mb-4">
+						<div class="card-header">
+							<label for="email" class="form-label"><h3>Correo electronico</h3></label>
+							<input type="email" class="form-control" name="email" [(ngModel)]="administrador.Correo" >
+						</div>
+					</div>
+					<div class="mb-4">
+						<div class="card-header">
+							<label for="password" class="form-label"><h3>Contraseña</h3></label>
+							<input type="password" class="form-control" name="password" [(ngModel)]="administrador.Password">
+						</div>
+					</div>
+					<!-- <div class="input-group form-group">
+
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="username">
+					</div>
+					<div class="input-group form-group">
+
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="password">
+					</div> -->
+					<div class="row align-items-center remember">
+						<input type="checkbox">Recordar contraseña
+					</div>
+					<li><hr class="dropdown-divider"></li>
+					<div class="form-group">
+						<input type="submit" value="Iniciar" class="btn float-right login_btn" (click)="Acceder()">
+						<!-- <button type="submit" class="btn btn-dark" (click)="Acceder()">Iniciar Sesion</button> -->
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Iniciar Sesion como cliente<a routerLink="/login">Click Aqui</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Olvidaste tu contraseña?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

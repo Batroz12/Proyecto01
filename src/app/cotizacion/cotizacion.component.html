@@ -1,0 +1,105 @@
+<div class="container w-75 bg-secondary mt-1">
+  <div class="row">
+    <div class="col">
+      <h1>Datos del Cliente</h1>
+      <div class="mb-3">
+          <label for="Cliente-DNI" class="form-label">Dni</label>
+          <input type="text" class="form-control" id="Cliente-DNI" aria-describedby="DNIHelp" [(ngModel)]="cliente.Dni">
+          <div id="DNIHelp" class="form-text">Ingrese su numero de DNI</div>
+      </div>
+      <div class="mb-3">
+          <label for="Cliente-Nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="Cliente-Nombre" aria-describedby="NombreHelp" [(ngModel)]="cliente.Nombre">
+          <div id="NombreHelp" class="form-text">Ingrese su nombre</div>
+      </div>
+      <div class="mb-3 form-check">
+          <label for="Cliente-Apellido" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="Cliente-Apellido" aria-describedby="ApellidoHelp" [(ngModel)]="cliente.Apellido">
+          <div id="ApellidoHelp" class="form-text">Ingrese su apellido</div>
+      </div>
+      <div class="mb-3 form-check">
+          <label for="Cliente-Email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="Cliente-Email" aria-describedby="EmailHelp" [(ngModel)]="cliente.Email">
+          <div id="EmailHelp" class="form-text">Ingrese su correo electronico</div>
+      </div>
+      <div class="mb-3 form-check">
+          <label for="Cliente-Telefono" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="Cliente-Telefono" aria-describedby="TelefonoHelp" [(ngModel)]="cliente.Telefono">
+          <div id="TelefonoHelp" class="form-text">Ingrese su numero telefonico</div>
+      </div>
+      <div class="mb-3">
+          <label for="Cliente-Departamento" class="form-label">Departamento</label>
+          <select id="Cliente-Departamento" class="form-select" [(ngModel)]="cliente.Departamento">
+          <option></option>
+          <option>Arequipa</option>
+          <option>Cusco</option>
+          <option>La Libertad</option>
+          <option>Lima</option>
+          <option>Piura</option>
+          </select>
+      </div>
+  </div>
+  <div class="col">
+      <h1>Datos del Vehiculo</h1>
+      <div class="mb-3">
+          <label for="Vehiculo-Marca" class="form-label">Marca</label>
+          <select id="Vehiculo-Marca" class="form-select" [(ngModel)]="vehiculo.Marca">
+          <option></option>
+          <option>Toyota</option>
+          <option>Kia</option>
+          <option>Susuki</option>
+          <option>Hyundai</option>
+          <option>Chevrolet</option>
+          <option>Nissan</option>
+          <option>Volvo</option>
+          </select>
+      </div>
+      <h4>Estado</h4>
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Vehiculo-Estado">
+          <label class="form-check-label" for="Vehiculo-Estado">
+            Nuevo
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Vehiculo-Estado" checked>
+          <label class="form-check-label" for="Vehiculo-Estado">
+            Usado
+          </label>
+      </div>
+      <div class="mb-3">
+          <label for="Vehiculo-Modelo" class="form-label">Modelo</label>
+          <select id="Vehiculo-Modelo" class="form-select" [(ngModel)]="vehiculo.Modelo">
+          <option></option>
+          <option>Hiace</option>
+          <option>SW4</option>
+          <option>Hilux</option>
+          <option>Yaris Sedan</option>
+          </select>
+      </div>
+      <div class="mb-3">
+          <label for="Vehiculo-Version" class="form-label">Version</label>
+          <select id="Vehiculo-Version" class="form-select" [(ngModel)]="vehiculo.Version">
+          <option></option>
+          <option>2010</option>
+          <option>2012</option>
+          <option>2014</option>
+          <option>2016</option>
+          <option>2018</option>
+          <option>2020</option>
+          <option>2022</option>
+          </select>
+      </div>
+      <h5>Comentarios/Observaciones</h5>
+      <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="Comentarios-Observaciones" style="height: 100px"></textarea>
+          <label for="Comentarios-Observaciones">Mensaje</label>
+      </div>
+      <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="Terminos-Condiciones">
+          <label class="form-check-label" for="Terminos-Condiciones">Acepta los terminos y condiciones y la politica de privacidad</label>
+      </div>
+  <button class="btn btn-dark" (click)="GuardarDatos()">Guardar</button>
+  </div>
+</div>
+</div>

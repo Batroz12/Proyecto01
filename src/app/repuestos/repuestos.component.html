@@ -1,0 +1,82 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+      <img src="https://www.mitsubishi-motors.com.pe/storage/multimedia/BANNER-HOME-Montero-Sport-1900x800.png" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="https://www.mitsubishi-motors.com.pe/storage/multimedia/Banner-Home-1900x800.png" class="d-block w-100" alt="...">
+    </div>
+
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="https://www.mitsubishi-motors.com.pe/storage/multimedia/XPANDER-CROSS-Banner-Home-1900x800.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section class="w-50 mx-auto text-center pt-5" id="intro" style="margin-top: -30px;">
+  <h1 class="p-3 fs-2 border-top border-3 ">
+      <span class="text-primary" style="font-family: 'Courier New', Courier, monospace;">
+        <b>Nuestros Repuestos</b>
+      </span>
+  </h1>
+  <h1 class="p-3 fs-2 border-top border-3" style="margin: -8px;">
+</h1>
+</section>
+
+
+<div class="container2">
+<!-- ...... REPUESTO_01 ...... -->
+  <div class="card">
+     <h4>Nombre: {{Repuesto01.nombre}}</h4>
+     <p><img src="{{Repuesto01.imagen}}" alt="Ya fue P"></p>
+     <p>Precio: {{Repuesto01.precio}}</p>
+  </div>
+<!-- ...... REPUESTO_02 ...... -->
+  <div class="card">
+     <h4>Nombre: {{Repuesto02.nombre}}</h4>
+     <p><img src="{{Repuesto02.imagen}}" alt="Ya fue P"></p>
+     <p>Precio: {{Repuesto02.precio}}</p>
+  </div>
+<!-- ...... REPUESTO_03 ...... -->
+  <div class="card">
+    <h4>Nombre: {{Repuesto03.nombre}}</h4>
+    <p><img src="{{Repuesto03.imagen}}" alt="Ya fue P"></p>
+    <p>Precio: {{Repuesto03.precio}}</p>
+  </div>
+
+  <!-- ...... REPUESTO_04 ...... -->
+      <div class="card">
+         <h4>Nombre: {{Repuesto04.nombre}}</h4>
+         <p><img src="{{Repuesto04.imagen}}" alt="Ya fue P"></p>
+         <p>Precio: {{Repuesto04.precio}}</p>
+      </div>
+  <!-- ...... REPUESTO_05 ...... -->
+      <div class="card">
+         <h4>Nombre: {{Repuesto05.nombre}}</h4>
+         <p><img src="{{Repuesto05.imagen}}" alt="Ya fue P"></p>
+         <p>Precio: {{Repuesto05.precio}}</p>
+      </div>
+  <!-- ...... REPUESTO_06 ...... -->
+      <div class="card">
+        <h4>Nombre: {{Repuesto06.nombre}}</h4>
+        <p><img src="{{Repuesto06.imagen}}" alt="Ya fue P"></p>
+        <p>Precio: {{Repuesto06.precio}}</p>
+      </div>
+  </div>
+
+<div class="Botton">
+
+<button [disabled]="estadoBoton" (click)="onDatos()">Datos REPUESTOS CONSOLA</button>
+
+</div>

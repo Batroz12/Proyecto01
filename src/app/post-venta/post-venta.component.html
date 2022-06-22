@@ -1,0 +1,68 @@
+<div class="container w-75 bg-secondary mt-4">
+  <div class="row">
+    <div class="col">
+      <h1>Datos del cliente</h1>
+      <div class="mb-3">
+        <label for="Cliente-Nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="Cliente-Nombre" aria-describedby="NombreHelp" [(ngModel)]="clienteAntiguo.Nombre">
+        <div id="NombreHelp" class="form-text">Ingrese su nombre</div>
+      </div>
+      <div class="mb-3 form-check">
+        <label for="Cliente-Apellido" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="Cliente-Apellido" aria-describedby="ApellidoHelp" [(ngModel)]="clienteAntiguo.Apellido">
+        <div id="ApellidoHelp" class="form-text">Ingrese su apellido</div>
+      </div>
+      <div class="mb-3 form-check">
+        <label for="Cliente-Email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="Cliente-Email" aria-describedby="EmailHelp" [(ngModel)]="clienteAntiguo.Email">
+        <div id="EmailHelp" class="form-text">Ingrese su correo electronico</div>
+      </div>
+      <div class="mb-3 form-check">
+        <label for="Cliente-Telefono" class="form-label">Telefono</label>
+        <input type="text" class="form-control" id="Cliente-Telefono" aria-describedby="TelefonoHelp" [(ngModel)]="clienteAntiguo.Telefono">
+        <div id="TelefonoHelp" class="form-text">Ingrese su numero telefonico</div>
+      </div>
+    </div>
+    <div class="col">
+      <h1>Datos del vehiculo</h1>
+      <div class="mb-3 form-check">
+        <label for="Vehiculo-Placa" class="form-label">Placa</label>
+        <input type="text" class="form-control" id="Vehiculo-Placa" aria-describedby="PlacaHelp" [(ngModel)]="vehiculoVendido.Placa">
+        <div id="VehiculoHelp" class="form-text">Ingrese la Placa de su vehiculo</div>
+      </div>
+      <div class="mb-3">
+        <label for="Vehiculo-Modelo" class="form-label">Modelo</label>
+        <select id="Vehiculo-Modelo" class="form-select" [(ngModel)]="vehiculoVendido.Modelo">
+        <option></option>
+        <option>Hiace</option>
+        <option>SW4</option>
+        <option>Hilux</option>
+        <option>Yaris Sedan</option>
+        </select>
+      </div>
+      <h1>Datos del concesionario</h1>
+      <div class="mb-3">
+        <label for="Consesionaria-Sede" class="form-label">Sede</label>
+        <select id="Consesionaria-Sede" class="form-select" [(ngModel)]="concesionario.Sede">
+        <option></option>
+        <option>Arequipa</option>
+        <option>Cusco</option>
+        <option>La Libertad</option>
+        <option>Lima</option>
+        <option>Piura</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="Consesionaria-Servicio" class="form-label">Servicio</label>
+        <select id="Consesionaria-Servicio" class="form-select" [(ngModel)]="concesionario.Servicio">
+        <option></option>
+        <option>Restaurar</option>
+        <option>Mejorar</option>
+        <option>Cuidado</option>
+        <option>Repuestos</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-dark" (click)="EnviarDatos()">Enviar</button>
+    </div>
+  </div>
+</div>

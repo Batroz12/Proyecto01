@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center pt-10 mt-5 m-1">
+    <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
+  <!-- <div class="modal fade te" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog"> -->
+    <div class="modal-content">
+
+      <section class="form-register">
+        <h4>Registro de Usuario</h4>
+        <label for="Codigo"></label>
+        <input class="controls" type="text" name="Dato_Nombre" id="Dato_Nombre" placeholder="Nombres" required=""
+          [(ngModel)]="registro.nombre" >
+        <label for="Dato_Nombre"></label>
+        <input class="controls" type="text" name="Dato_Apellido" id="Dato_Apellido" placeholder="Apellidos" required=""
+          [(ngModel)]=" registro.apellido">
+        <label for="Dato_Apellido"></label>
+        <input class="controls" type="password" name="Dato_contraseña" id="Dato_contraseña" placeholder="Contraseña"
+          required="" [(ngModel)]="registro.contrasenia">
+        <label for="Dato_contraseña"></label>
+        <input class="controls" type="text" name="Dato_Correo" id="Dato_Correo" placeholder="Correo Electronico"
+          [(ngModel)]="registro.correo">
+
+        <label for="Dato_Correo"></label>
+
+        <button class="btn btn-primary" type="reset" (click)="ondatos()">Registrar </button>
+      </section>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+<!-- Navigation -->
+<!-- <nav class="navbar navbar-ligth" style="background-color: #f1faee;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://www.pikpng.com/pngl/b/248-2488343_caballo-silueta-png-caballo-animado-corriendo-png-clipart.png" alt="" width="100px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
+        <span class="navbar-toggler-icon" style="background-color: #f1faee;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><b>Autos</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><b>Repuestos</b></a>
+          </li>
+        </ul>
+        <a class="navbar-brand" href="#"><img src="https://www.pikpng.com/pngl/b/248-2488343_caballo-silueta-png-caballo-animado-corriendo-png-clipart.png" alt="" width="100px"></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><b>Autos</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><b>Repuestos</b></a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav> -->
+
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+        <img src="https://www.mgmotors.com.pe/uploads/banner-home/2022/abril/intriga-mgzx-plus/MGZXplus-intriga-banner.png" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://www.mgmotors.com.pe/uploads/banner-home/2020/agosto/garantia-y-manteniemiento.jpg" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://www.mgmotors.com.pe/uploads/banner-home/2021/febrero/Conmebol-banner.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="w-50 mx-auto text-center pt-5" id="intro" style="margin-top: -30px;">
+    <h1 class="p-3 fs-2 border-top border-3 ">
+        <span class="text-primary" style="font-family: 'Courier New', Courier, monospace;">
+          <b>Nuestros Accesorios</b>
+        </span>
+    </h1>
+    <h1 class="p-3 fs-2 border-top border-3" style="margin: -8px;">
+  </h1>
+</section>
+
+<div class="container2">
+  <!-- ...... ACCESORIO_01 ...... -->
+      <div class="card">
+         <h4>Nombre: {{Accesorio01.nombre}}</h4>
+         <p><img src="{{Accesorio01.imagen}}" alt="Ya fue P"></p>
+         <p>Precio: {{Accesorio01.precio}}</p>
+      </div>
+  <!-- ...... ACCESORIO_02 ...... -->
+      <div class="card">
+         <h4>Nombre: {{Accesorio02.nombre}}</h4>
+         <p><img src="{{Accesorio02.imagen}}" alt="Ya fue P"></p>
+         <p>Precio: {{Accesorio02.precio}}</p>
+      </div>
+  <!-- ...... ACCESORIO_03 ...... -->
+      <div class="card">
+        <h4>Nombre: {{Accesorio03.nombre}}</h4>
+        <p><img src="{{Accesorio03.imagen}}" alt="Ya fue P"></p>
+        <p>Precio: {{Accesorio03.precio}}</p>
+      </div>
+
+      <!-- ...... ACCESORIO_04 ...... -->
+          <div class="card">
+             <h4>Nombre: {{Accesorio04.nombre}}</h4>
+             <p><img src="{{Accesorio04.imagen}}" alt="Ya fue P"></p>
+             <p>Precio: {{Accesorio04.precio}}</p>
+          </div>
+      <!-- ...... ACCESORIO_05 ...... -->
+          <div class="card">
+             <h4>Nombre: {{Accesorio05.nombre}}</h4>
+             <p><img src="{{Accesorio05.imagen}}" alt="Ya fue P"></p>
+             <p>Precio: {{Accesorio05.precio}}</p>
+          </div>
+      <!-- ...... ACCESORIO_06 ...... -->
+          <div class="card">
+            <h4>Nombre: {{Accesorio06.nombre}}</h4>
+            <p><img src="{{Accesorio06.imagen}}" alt="Ya fue P"></p>
+            <p>Precio: {{Accesorio06.precio}}</p>
+          </div>
+      </div>
+
+    <div class="Botton">
+
+    <button [disabled]="estadoBoton" (click)="onDatos()">Datos ACCESORIOS CONSOLA</button>
+
+    </div>

@@ -1,0 +1,44 @@
+<div class="container w-75 bg-secondary mt-5 rounded shadow">
+  <div class="row align-items-stretch">
+      <div class="col bg d-none d-lg-block">
+          <!-- <img src="https://es-mb.theepochtimes.com/assets/uploads/2021/11/2021-Corolla-Hatchback-Special-Edition_001-1500x1001.jpg" width="750" alt=""> -->
+
+      </div>
+      <div class="col p-5 rounded-end">
+          <div class="text-end">
+              <img src="https://c8.alamy.com/compes/2bw1jhg/icono-de-inicio-de-sesion-en-estilo-plano-las-personas-aseguran-el-acceso-a-la-ilustracion-vectorial-sobre-fondo-negro-redondo-con-efecto-de-sombra-larga-boton-circular-de-contrasena-aprobada-2bw1jhg.jpg" width="48" alt="">
+          </div>
+          <h2 class="fw-bold text-center py-4">Bienvenido</h2>
+          <!-- Login -->
+          <form action="">
+              <div class="mb-4">
+                  <label for="email" class="form-label">Correo electronico</label>
+                  <input type="email" class="form-control" name="email" [(ngModel)]="usuario.Correo">
+              </div>
+              <div class="mb-4">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" name="password" [(ngModel)]="usuario.Password">
+              </div>
+              <div class="mb-4 form-check">
+                  <input type="checkbox" name="connected" class="form-check-input">
+                  <label for="connected" class="form-check-label">Mantenerme conectado</label>
+              </div>
+              <div class="d-grid">
+                  <button type="submit" class="btn btn-dark" (click)="Acceder()">Iniciar Sesion</button>
+              </div>
+              <li><hr class="dropdown-divider"></li>
+              <div class="fw-bold text-center py-3">
+                  <span>¿No tiene una cuenta? <a routerLink="/registro">Registrarse</a></span>
+              </div>
+              <div class="card-footer">
+                  <div class="d-flex justify-content-center links">
+                      Iniciar Sesion como administrador<a routerLink="/login-admin">Click Aqui</a>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                      <a href="#">Olvidaste tu contraseña?</a>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
